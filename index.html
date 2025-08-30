@@ -1,242 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mengkhorn CV</title>
-    <style>
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-          background: #f4f4f4;
-        }
-        .container {
-          display: grid;
-          grid-template-columns: 280px 1fr;
-          min-height: 100vh;
-          background: #fff;
-          max-width: 1100px;
-          margin: 0 auto;
-          box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        /* Sidebar */
-        .sidebar {
-          background: #1f2937; /* dark navy */
-          color: #fff;
-          padding: 30px 20px;
-        }
-        .sidebar img {
-          width: 140px;
-          height: 140px;
-          border-radius: 50%;
-          display: block;
-          margin: 0 auto 20px;
-          border: 4px solid #fff;
-        }
-        .sidebar h2 {
-          font-size: 1.3rem;
-          margin: 20px 0 10px;
-          border-bottom: 2px solid #3b82f6;
-          padding-bottom: 5px;
-        }
-        .sidebar p, .sidebar li {
-          font-size: 0.9rem;
-          line-height: 1.5;
-        }
-        .sidebar ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-        .sidebar ul li {
-          margin-bottom: 6px;
-        }
-
-        /* Main */
-        .main {
-          padding: 40px 50px;
-        }
-        .main h1 {
-          font-size: 2rem;
-          margin: 0;
-          color: #1f2937;
-        }
-        .main h2 {
-          font-size: 1rem;
-          font-weight: normal;
-          color: #6b7280;
-          margin-top: 2px;
-          margin-bottom: 20px;
-        }
-        .section {
-          margin-top: 30px;
-        }
-        .section h3 {
-          font-size: 1.2rem;
-          color: #1f2937;
-          margin-bottom: 10px;
-          border-bottom: 2px solid #3b82f6;
-          padding-bottom: 5px;
-        }
-        .job, .education-item {
-          margin-bottom: 20px;
-        }
-        .job h4, .education-item h4 {
-          margin: 0;
-          font-size: 1rem;
-          font-weight: bold;
-          color: #1f2937;
-        }
-        .job p, .education-item p {
-          margin: 4px 0;
-          font-size: 0.9rem;
-          color: #374151;
-        }
-        .job ul {
-          margin: 6px 0 0 18px;
-          padding: 0;
-          font-size: 0.9rem;
-          color: #374151;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>PDF Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #22303f;
+      color: white;
+      padding: 10px 16px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <img src="cycle.png" alt="Profile Photo" />
-        <h2>Contact</h2>
-        <p>📞 +855-818-282-57</p>
-        <p>📧 kanmengkhorn966@gmail.com</p>
-        <p>📍 St 2002, Sangkat Teok Thla, Khan Sen Sok, Phnom Penh.</p>
+  <header>
+    📄 Resume Preview
+  </header>
 
-        <h2>SKILLS</h2>
-        <ul>
-            <li>Java (Spring Boot)</li>
-            <li>Python (FastAPI/Django)</li>
-            <li>SQL & Databases</li>
-            <li>MySQL / Oracle / PostgreSQL / MongoDB</li>
-            <li>REST APIs, JWT, OAuth</li>
-            <li>PHP, ExtJS, CodeIgniter</li>
-            <li>Docker, Kubernetes</li>
-            <li>AWS / Cloud</li>
-        </ul>
-
-        <h2>LANGUAGES</h2>
-        <ul>
-            <li>Khmer (Native)</li>
-            <li>English (Fluent)</li>
-        </ul>
-
-        <h2>REFERENCES</h2>
-        <p><strong>MEN PHALLA</strong><br>
-            Cogetel Ltd (Online) / Billing Manager<br>
-            📞 +855 92 901 982<br>
-            ✉ menphalla@gmail.com</p>
-    </aside>
-
-    <!-- Main -->
-    <main class="main">
-        <h1>KAN MENG KHORN </h1>
-        <h2>Middleware Team leader</h2>
-
-        <div class="section">
-            <h3>PROFILE</h3>
-            <p>
-                Passionate Middleware Team Leader with experience in designing scalable
-                APIs, secure databases, and efficient system architectures.
-                Skilled in backend frameworks, DevOps practices, and cloud
-                infrastructure.
-            </p>
-        </div>
-
-        <div class="section">
-            <h3>WORK EXPERIENCE</h3>
-
-            <div class="job">
-              <h4>Cogetel (Online ISP) — Phnom Penh</h4>
-
-              <p><em>Middleware Team Leader (2024–Present)</em></p>
-              <ul>
-                <li>Led a backend team delivering high-performance middleware services for ISP systems.</li>
-                <li>Designed and implemented RESTful APIs for billing, sales automation, and banking integration.</li>
-                <li>Optimized SQL queries and caching strategies to enhance system performance.</li>
-                <li>Mentored junior developers and conducted regular code reviews.</li>
-                <li><strong>Key Projects:</strong> Bank Integration API, Billing System, Mobile Sales Booking Automation</li>
-              </ul>
-
-              <p><em>Backend Developer (2022–2024)</em></p>
-              <ul>
-                <li>Developed scalable APIs for mobile and web platforms using Spring Boot and PostgreSQL.</li>
-                <li>Maintained and enhanced backend and frontend projects across multiple systems.</li>
-                <li>Collaborated with cross-functional teams to define requirements and deliver solutions.</li>
-                <li><strong>Key Projects:</strong> Core System API, HRMS, Billing System, Sales Mobile Platform</li>
-              </ul>
-
-              <p><em>Senior Web Application Developer (2021–2022)</em></p>
-              <ul>
-                <li>Built web applications with PHP, React.js, and Vue.js.</li>
-                <li>Collaborated with product and design teams to deliver responsive and user-friendly solutions.</li>
-              </ul>
-
-              <p><em>Web Application Developer (2019–2021)</em></p>
-              <ul>
-                <li>Developed and maintained PHP/MySQL applications using modern frontend frameworks.</li>
-                <li>Ensured system stability and delivered feature enhancements.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <h4>Easy Solution (2017–2019)</h4>
-              <p><em>Web Application Developer</em></p>
-              <ul>
-                <li>Developed enterprise applications using CodeIgniter, Bootstrap, and jQuery.</li>
-                <li>Provided system maintenance, bug fixes, and new feature development.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <h4>CamApp Solution (2016–2017)</h4>
-              <p><em>Web Developer</em></p>
-              <ul>
-                <li>Delivered full-stack solutions for client projects using PHP and MySQL.</li>
-                <li>Collaborated with frontend team to deliver modern and responsive UIs.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <h4>IT-Center School (2015–2016)</h4>
-              <p><em>Web Developer Intern</em></p>
-              <ul>
-                <li>Assisted in website development projects using HTML, CSS, and PHP.</li>
-                <li>Taught basic web development concepts to students as part of scholarship internship.</li>
-              </ul>
-            </div>
-          </div>
-        <div class="section">
-            <h3>EDUCATION</h3>
-            <div class="education-item">
-                <h4>DevOps</h4>
-                <p>Sunrise Institute (2023-2024)</p>
-            </div>
-            <div class="education-item">
-                <h4>ORACLE Database Administration</h4>
-                <p>Sunrise Institute (2022-2023)</p>
-            </div>
-            <div class="education-item">
-                <h4>Web Development</h4>
-                <p>IT-Center School (2016–2017)</p>
-            </div>
-            <div class="education-item">
-                <h4>Bachelor of Computer Science</h4>
-                <p>Royal University of Phnom Penh (2014–2018)</p> 
-            </div>
-            <div class="education-item">
-                <h4>High School</h4>
-                <p>Serey Mongkol High School (2008–2014)</p> 
-            </div>
-        </div>
-    </main>
-</div>
+  <!-- Replace resume.pdf with the path or URL of your PDF -->
+  <iframe src="resume.pdf"></iframe>
 </body>
 </html>
